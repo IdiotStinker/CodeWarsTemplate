@@ -2,6 +2,8 @@ from pathlib import Path
 import os
 
 starterCode = "with open(\"input.txt\", \"r\") as f:\n\tINPUT = f.read().split(\"\\n\")"
+#UNCOMMENT THIS IF YOU PREFER sys.stdin
+#starterCode = "import sys\nlines=sys.stdin.read().split(\"\\n\")"
 
 def create(probCount = 30):
     for i in range(probCount):
@@ -23,6 +25,8 @@ def restart():
         # Note: Change "\\ to / if you are not on Windows!"
         if "prob" in file and ".py" in file: os.remove(os.getcwd() + "\\" + file)
         
-
+#Uncomment the create method to create 30 py files
 #create()
-restart()
+
+#Deletes all the prob python files
+#restart()
