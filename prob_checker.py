@@ -12,7 +12,7 @@ Notes:
 
 __version__ = "0.8.2022.02.28.1.modded"
 __author__ = "Sebastian Schagerer"
-__modifier__ = "Isaac Deter"
+__modifier__ = "Isaac Deter - Ha jokes on you its me now"
 
 """
 Now with modifications to make it better

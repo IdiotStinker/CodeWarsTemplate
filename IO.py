@@ -17,8 +17,10 @@ def create(num = 30):
 def restart():
     for file in os.listdir():
         if Path(__file__.split("\\")[-1])==Path(file): continue
-        if file in [".git", ".gitattributes"]: continue
+        if file in [".git", ".gitattributes", "prob_checker.py", 
+                    "exampleDirectoryProb.py"]: continue
+        if "prob" not in file and ".py" not in file: continue
         os.remove(os.getcwd() + "\\" + file)
 
-create()
+#create()
 #restart()

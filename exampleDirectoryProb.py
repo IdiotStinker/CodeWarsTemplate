@@ -10,6 +10,7 @@ endTime = datetime.strptime(end, "%Y-%m-%d")
 
 #Just files for prob
 files = os.listdir("exampleFiles")
+#Ok, uhh lets see an HPE example sometime
 
 transactions = []
 total = 0
