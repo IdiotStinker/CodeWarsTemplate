@@ -19,6 +19,8 @@ def restart():
         if Path(__file__.split("\\")[-1])==Path(file): continue
         if file in [".git", ".gitattributes", "prob_checker.py", 
             "exampleDirectoryProb.py"]: continue
+        
+        # Note: Change "\\ to / if you are not on Windows!"
         if "prob" in file and ".py" in file: os.remove(os.getcwd() + "\\" + file)
         
 
