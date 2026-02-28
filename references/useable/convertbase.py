@@ -1,12 +1,13 @@
 def convertbase(string, bStart, bFinal):
     alpha = "0123456789abcdefghijklmnopqrstuvwxyz"
-    n = int(string, bStart)
-    if n == 0: return "0"
+    decimal = int(string, bStart)
+    if decimal == 0: return "0"
     result = ""
-    while n:
-        result = alpha[n % bFinal] + result
-        n //= bFinal
+    while decimal:
+        result = alpha[decimal % bFinal] + result
+        decimal //= bFinal
     return result
 
 if __name__ == "__main__":
     print(convertbase("code", 36, 35))
+    print(convertbase("357", 8, 10))

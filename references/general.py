@@ -62,7 +62,7 @@ time_t = datetime.strptime(time_str, "%Y-%m-%d")
 
 time_str2 = "2025-8-20"
 time_t2 = datetime.strptime(time_str2, "%Y-%m-%d")
-e = time_t2.strftime("%A, the %drd of %B")
+e = time_t2.strftime(f"%A, the %drd of %B")
 #print(e)
 time_str3 = "08/20 in 2025"
 time_t3 = datetime.strptime(time_str3, "%m/%d in %Y")
